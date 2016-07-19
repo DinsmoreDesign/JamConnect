@@ -1,11 +1,15 @@
 Template.postItem.helpers({
 
-  domain: function() {
+	ownPost: function() {
+		return this.userId === Meteor.userId();
+	},
 
-    var a = document.createElement('a');
-    a.href = this.url;
-    return a.hostname;
-    
-  }
+	domain: function() {
+
+		var a = document.createElement('a');
+		a.href = this.url;
+		return a.hostname;
+	    
+	}
 
 });
