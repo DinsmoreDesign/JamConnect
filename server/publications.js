@@ -1,7 +1,14 @@
-Meteor.publish('posts', function() {
+Meteor.publish('posts', function(options) {
 
-  return Posts.find();
+  return Posts.find({}, options);
 
+});
+
+Meteor.publish('singlePost', function(id) {
+
+  check(id, String)
+  return Posts.find(id);
+  
 });
 
 Meteor.publish('comments', function(postId) {
@@ -14,5 +21,5 @@ Meteor.publish('comments', function(postId) {
 Meteor.publish('notifications', function() {
 
   return Notifications.find({userId: this.userId, read: false});
-  
+
 });

@@ -1,9 +1,9 @@
-Template.postsList.helpers({
+// Template.postsList.helpers({
 
-  posts: function() {
+//   posts: function() {
 
-    return Posts.find({}, {sort: {submitted: -1}});
+//     return Posts.find({}, {sort: {submitted: -1}});
 
-  }
+//   }
   
-});
+// });
