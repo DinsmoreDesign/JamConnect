@@ -1,7 +1,7 @@
 # JamConnect
 A real-time music forum built on Meteor.JS
 
-JamConnect is a work-in-progress built of the Discover Meteor framework. Its purpose is to connect local musicians who have no intentions of joining a band and just want to meet up and rock out!
+JamConnect is a work-in-progress built off the Discover Meteor framework. Its purpose is to connect local musicians who have no intentions of joining a band and just want to meet up and rock out!
 
 
 ##Quick Start:
