@@ -3,7 +3,11 @@
   <div class="post">
     <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      {{#if url}}
+        <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      {{else}}
+        <h3>{{title}}</h3>
+      {{/if}}
       <p>
         {{pluralize votes "Vote"}},
         submitted by {{author}},

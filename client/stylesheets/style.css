@@ -275,3 +275,6 @@ a:hover, a:active, a:focus {
 .badge {
   background-color: #FF5722;
 }
+.req {
+  color: red;
+}

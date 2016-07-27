@@ -2,19 +2,27 @@
 
   <form class="main form page">
 
-    <div class="form-group {{errorClass 'url'}}">
-      <label class="control-label" for="url">URL</label>
+    <div class="form-group {{errorClass 'title'}}">
+      <label class="control-label" for="title"><span class="req">*</span> Title</label>
       <div class="controls">
-          <input name="url" id="url" type="text" value="{{url}}" placeholder="Your URL" class="form-control"/>
-          <span class="help-block">{{errorMessage 'url'}}</span>
+          <input name="title" id="title" type="text" value="{{title}}" placeholder="Guitarist wanted!" class="form-control"/>
+          <span class="help-block">{{errorMessage 'title'}}</span>
       </div>
     </div>
 
-    <div class="form-group {{errorClass 'title'}}">
-      <label class="control-label" for="title">Title</label>
+    <div class="form-group {{errorClass 'message'}}">
+      <label class="control-label" for="message"><span class="req">*</span> Message</label>
       <div class="controls">
-          <input name="title" id="title" type="text" value="{{title}}" placeholder="Name your post" class="form-control"/>
-          <span class="help-block">{{errorMessage 'title'}}</span>
+          <textarea name="message" id="message" value="{{message}}" placeholder="Check out my my new band..." class="form-control" rows="5"></textarea>
+          <span class="help-block">{{errorMessage 'message'}}</span>
+      </div>
+    </div>
+
+    <div class="form-group {{errorClass 'url'}}">
+      <label class="control-label" for="url"><em>(optional)</em> URL</label>
+      <div class="controls">
+          <input name="url" id="url" type="url" value="{{url}}" placeholder="http://example.com" class="form-control"/>
+          <span class="help-block">{{errorMessage 'url'}}</span>
       </div>
     </div>
 
