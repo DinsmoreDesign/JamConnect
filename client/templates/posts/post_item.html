@@ -3,11 +3,7 @@
   <div class="post">
     <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
     <div class="post-content">
-      {{#if url}}
-        <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-      {{else}}
-        <h3>{{title}}</h3>
-      {{/if}}
+        <h3><a href="{{pathFor 'postPage'}}">{{title}}</a></h3>
       <p>
         {{pluralize votes "Vote"}},
         submitted by {{author}},
@@ -15,7 +11,44 @@
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>
     </div>
-    <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss</a>
+    {{#if url}}
+      <a href="{{url}}" class="discuss btn btn-default" alt="Visit external link" title="Visit external link"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+    {{/if}}
+  </div>
+  
+</template>
+
+<template name="postMessage">
+  <div class="post">
+    <div class="row">
+      <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
+
+      <div class="post-content">
+        {{#if url}}
+          <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+        {{else}}
+          <h3>{{title}}</h3>
+        {{/if}}
+        <p>
+          {{pluralize votes "Vote"}},
+          submitted by {{author}},
+          <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
+          {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+        </p>
+      </div>
+      {{#if url}}
+        <a href="{{url}}" class="discuss btn btn-default" alt="Visit external link" title="Visit external link"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+      {{/if}}
+    </div>
+
+    <div class="row">
+      <div class="post-message">
+        {{#each splitOnNewlines message}}
+          <p>{{this}}</p>
+        {{/each}}
+      </div>
+    </div>
+
   </div>
   
 </template>

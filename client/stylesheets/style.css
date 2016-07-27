@@ -278,3 +278,9 @@ a:hover, a:active, a:focus {
 .req {
   color: red;
 }
+.post .row {
+  margin: 0;
+}
+.post-message {
+  padding-top: 20px;
+}
