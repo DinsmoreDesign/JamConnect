@@ -5,54 +5,44 @@
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
-
 body {
   background: #eee;
   color: #666666;
 }
-
 a {
   color: #FF5722;
 }
-
 a:hover, a:active, a:focus {
   color: #FFC107;
   text-decoration: none;
 }
-
 .btn-primary, .btn-primary:focus {
   background-color: #FF5722;
   border: none;
 }
-
   .btn-primary:hover, .btn-primary:active {
     background-color: #FFC107;
     border: none;
   }
-
 .discuss, .discuss:focus {
   color: #FF5722;
   border-color: #FF5722;
 }
-
   .discuss:hover, .discuss:active {
     color: #FFC107;
     border-color: #FFC107;
     background-color: #FFF;
   }
-
 .btn-danger, .btn-danger:focus {
   color: #E91E63;
   background-color: #FFF;
   border-color: #E91E63;
 }
-
   .btn-danger:hover, .btn-danger:active {
     color: #FFF;
     background-color: #E91E63;
     border-color: #E91E63;
   }
-
 #main {
   position: relative;
   margin-top: 80px;
@@ -62,12 +52,10 @@ a:hover, a:active, a:focus {
   top: 0px;
   width: 100%;
 }
-
 .nav {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -77,11 +65,9 @@ a:hover, a:active, a:focus {
   height: auto;
   padding: 15px;
 }
-
 .navbar-nav > li > a {
   line-height: 50px;
 }
-
 .navbar-toggle {
     position: relative;
     float: right;
@@ -91,72 +77,87 @@ a:hover, a:active, a:focus {
     border-radius: 0;
     height: 50px;
 }
-
 #spinner {
-  height: 300px; }
-
+  height: 300px;
+}
 .post {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
   position: relative;
-  opacity: 1; }
+  opacity: 1;
+}
   .post:before, .post:after {
     content: "";
-    display: table; }
+    display: table;
+  }
   .post:after {
-    clear: both; }
+    clear: both;
+  }
   .post.invisible {
-    opacity: 0; }
+    opacity: 0;
+  }
   .post.instant {
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
-    transition: none; }
-  .post.animate{
+    transition: none;
+  }
+  .post.animate {
     -webkit-transition: all 300ms 0ms;
     -moz-transition: all 300ms 0ms ease-in;
     -o-transition: all 300ms 0ms ease-in;
-    transition: all 300ms 0ms ease-in; }
+    transition: all 300ms 0ms ease-in;
+  }
   .post .upvote {
     display: block;
     margin: 7px 12px 0 0;
-    float: left; }
+    float: left;
+  }
   .post .post-content {
-    float: left; }
+    float: left;
+  }
     .post .post-content h3 {
       margin: 0;
       line-height: 1.4;
-      font-size: 18px; }
+      font-size: 18px;
+    }
       .post .post-content h3 a {
         display: inline-block;
-        margin-right: 5px; }
+        margin-right: 5px;
+      }
       .post .post-content h3 span {
         font-weight: normal;
         font-size: 14px;
         display: inline-block;
-        color: #aaaaaa; }
+        color: #aaaaaa;
+      }
     .post .post-content p {
-      margin: 0; }
+      margin: 0;
+    }
   .post .discuss {
     display: block;
     float: right;
-    margin-top: 7px; }
-
+    margin-top: 7px;
+  }
 .comments {
   list-style-type: none;
-  margin: 0; }
+  margin: 0;
+}
   .comments li h4 {
     font-size: 16px;
-    margin: 0; }
+    margin: 0;
+  }
     .comments li h4 .date {
       font-size: 12px;
-      font-weight: normal; }
+      font-weight: normal;
+    }
     .comments li h4 a {
-      font-size: 12px; }
+      font-size: 12px;
+    }
   .comments li p:last-child {
-    margin-bottom: 0; }
-
+    margin-bottom: 0;
+  }
 .dropdown-menu span {
   display: block;
   padding: 3px 20px;
@@ -165,11 +166,9 @@ a:hover, a:active, a:focus {
   color: #bbb;
   white-space: nowrap;
 }
-
 .dropdown-menu > li > a {
     color: #FF5722;
 }
-
 .load-more {
   display: block;
   background: #FF5722;
@@ -183,35 +182,30 @@ a:hover, a:active, a:focus {
     text-decoration: none;
     background-color: #FFC107;
   }
-
-.posts .spinner-container{
+.posts .spinner-container {
   position: relative;
   height: 100px;
 }
-
-.jumbotron{
+.jumbotron {
   text-align: center;
 }
 .jumbotron h2{
   font-size: 60px;
   font-weight: 100;
 }
-
 @-webkit-keyframes fadeOut {
   0% {opacity: 0;}
   10% {opacity: 1;}
   90% {opacity: 1;}
   100% {opacity: 0;}
 }
-
 @keyframes fadeOut {
   0% {opacity: 0;}
   10% {opacity: 1;}
   90% {opacity: 1;}
   100% {opacity: 0;}
 }
-
-.errors{
+.errors {
   position: fixed;
   z-index: 10000;
   padding: 10px;
@@ -221,15 +215,12 @@ a:hover, a:active, a:focus {
   bottom: 0px;
   pointer-events: none;
 }
-
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
   color: #FF5722;
 }
-
 .has-error .form-control {
   border-color: #FF5722;
 }
-
 .alert {
           animation: fadeOut 2700ms ease-in 0s 1 forwards;
   -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
@@ -252,10 +243,10 @@ a:hover, a:active, a:focus {
     .alert.alert-danger button {
       opacity: 1;
     }
-.post{
+.post {
   position:relative;
 }
-.post.animate{
+.post.animate {
   transition:all 300ms 0ms ease-in;
 }
 .post-pad {
