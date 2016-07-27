@@ -1,5 +1,7 @@
 Template.postSubmit.onCreated(function() {
+
   Session.set('postSubmitErrors', {});
+  
 });
 
 Template.postSubmit.helpers({

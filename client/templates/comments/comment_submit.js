@@ -30,7 +30,7 @@ Template.commentSubmit.events({
     var errors = {};
 
     if (! comment.body) {
-      errors.body = "Please write some content";
+      errors.body = "Please enter some content";
       return Session.set('commentSubmitErrors', errors);
     }
 
