@@ -284,3 +284,7 @@ a:hover, a:active, a:focus {
 .post-message {
   padding-top: 20px;
 }
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
